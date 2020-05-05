@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
   highcharts = Highcharts;
   chartOptions = {   
     chart: {
-       type: "spline"
+       type: "area"
     },
     title: {text:''},
   
