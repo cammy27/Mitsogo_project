@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+</head>
+<body>
+
+<!-- <div class="container">
+  <h1>My First Bootstrap Page</h1>
+  <p>This is some text.</p>
+</div> -->
+
+<div class="container" style="    padding: 0 !important;
+margin: 0 !important;
+width: 100%;">
+  <div class="row" style="background: #43425D;">
+    <!-- the left side column -->
+    <div class="col-sm-2" style="padding: 0 !important;
+    background: #43425D;
+    /* height: 100vh; */
+    ">
+    <h1 style="text-align: left;
+    font: Bold 15px/21px Source Sans Pro;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+    opacity: 1;padding-left: 10px;
+">IMPEKABLE</h1>
+<ul style="padding: 12px;">
+  <li>
+    <a href="#" style="font: Regular 15px/19px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;">
+      <span style="padding-right: 15px;">
+        <img src="assets/home_0.png" style="
+        padding-left: 2%;"> 
+      </span>
+      Home
+    </a>
+  </li>
+  <li style="    padding-top: 20%;">
+    <a href="#" style="font: Regular 15px/19px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;">
+      <span style="padding-right: 15px;">
+        <img src="assets/chart_0.png" style="
+        padding-left: 2%;">
+      </span>
+      Dashboard
+    </a>
+  </li>
+  <li style="padding-top: 20%;">
+    <a href="#" style="font: Regular 15px/19px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;">
+      <span style="padding-right: 15px;">
+        <img src="assets/mail_0.png" style="
+        padding-left: 2%;">
+      </span>
+      Inbox
+    </a>
+  </li>
+  <li style="padding-top: 20%;">
+    <a href="#" style="font: Regular 15px/19px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;">
+      <span style="padding-right: 15px;">
+        <img src="assets/bar_0.png" style="
+        padding-left: 2%;">
+      </span>
+      Products
+    </a>
+  </li>
+</ul>
+    </div>
+    <!-- left side of the column -->
+    <div class="col-sm-10" style="padding: 0px !important;
+    background: #F0F0F7;
+    /* height: 100vh; */
+    border-top-left-radius: 13pt;">
+    <!-- header -->
+<nav class="navbar navbar-expand-md navbar-dark " id="banner" style="    background: white;    border-top-left-radius: 13pt;">
+  <a class="navbar-brand" href="#" style="width: 10%;"><span> <img src="assets/menu_0.png"></span> </a>
+  <a class="navbar-brand" href="#" style="width:60%"><span><img src="assets/search_0.png" style="    padding-right: 2%;">
+    <input type="text"  placeholder="Search transactions, invoices or help" style="border: none;"></span></a>
+    <a class="navbar-brand" style="width:30%;text-align: right;    padding-top: 5px;">
+      <span style="padding-right: 5%;"> <img src="assets/notify_0.png"></span>
+      <span style="padding-right: 5%;">John Doe</span>
+      <span style="padding-right: 5%;"><img src="assets/Jana Navakova.jpg" style="    width: 38px;
+        height: 38px;
+        border-radius: 50pt;"></span>
+    </a>
+</nav>
+<div class="row">
+
+  <div class="col-md-8">
+    <div class="row">
+      <div class="col-md-6 grid-margin stretch-card">
+        <div class="card" style="background: white;
+        margin-bottom: 10%;height: 457px;">
+         <div class="row">
+           <div class="col-md-6" style="text-align: start;color: #4D4F5C; font-size:18px">
+             Statistics
+           </div>
+           <div class="col-md-6 ">
+             <button class="dropdown">Last 6 months</button>
+           </div>
+           <div class="row">
+            <highcharts-chart
+            [Highcharts] = "highcharts" 
+            [options] = "chartOptions" 
+            style = "width: 290px !important;
+                height: 400px !important;display: block;">
+         </highcharts-chart>
+           </div>
+         </div>
+        </div>
+      </div>
+      <div class="col-md-6 grid-margin stretch-card">
+        <div class="card" style="background: white;
+        margin-bottom: 10%;">
+          <div class="row" style="color: #4D4F5C;font-size: 18px;">
+            Sales Distribution
+          </div>
+          <div class="row">
+            <app-pie></app-pie>
+          </div>
+        </div>
+      </div>
+      <div class=" col-md-12 grid-margin">
+        <div class="card" style="background: white;">
+          <div class="card-body">
+            <div class="row" style="text-align: left;
+            font: Regular 18px/13px Source Sans Pro;
+            letter-spacing: 0px;
+            color: #4D4F5C;
+            opacity: 1;">
+              Referrer
+            </div>
+            <div class="table-responsive">
+              <table class="table table-borderless">
+                <tr style="background: #F5F6FA;border-bottom: 1px solid #F1F1F3;">
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">Location</td>
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">Views</td>
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">Sales</td>
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">Conversion</td>
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">Total</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #F1F1F3;">
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">facebook.com</td>
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">3467</td>
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">753</td>
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">53%</td>
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">$12,1234</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #F1F1F3;">
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">twitter.com</td>
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">4634</td>
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">234</td>
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">34%</td>
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">$22,342</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #F1F1F3; ">
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">Direct, email, IM</td>
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">5354</td>
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">435</td>
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">23%</td>
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">$13,3424</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #F1F1F3;">
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">linkedin.com</td>
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">54634</td>
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">453</td>
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">65%</td>
+                  <td style=  " padding-top: 20px;
+                  padding-bottom: 20px;">$64,234</td>
+                </tr>
+            <div class="row" style="    text-align: start;
+            padding-left: 4%;">
+              <a href="#">Show More</a>
+            </div>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="row">
+      <div class="col-md-12 grid-margin">
+        <div class="card" style="    background: #FFFFFF;">
+          <div class="card-body">
+            <div class="card-title" >
+               <img src="assets/Jana Navakova.jpg" style="    width: 109px;
+               height: 109px;
+               border-radius: 50px;">
+               <div style="font: Bold 18px/13px Source Sans Pro;
+               letter-spacing: 0px;
+               color: #4D4F5C;
+               opacity: 1;    padding-top: 20px;">
+                Nick Herasimenka
+               </div>
+               <div style="font: Regular 15px/25px Source Sans Pro;
+               letter-spacing: 0px;
+               color: #43425D;
+               opacity: 0.5;">United States</div>
+            </div>  
+            <div class='row' style="   
+          padding-top: 5px;">
+              <div class="col-md-3"><img src="assets/insta_0.png"></div>
+              <div class="col-md-3"><img src="assets/twitter_0.png"></div>
+              <div class="col-md-3"><img src="assets/facebook_0.png"></div>
+              <div class="col-md-3"><img src="assets/mail_0.png"></div>
+            </div>
+            <div class="row" style=" border-top: 1px solid #dee2e6 !important;margin-top: 12px;padding-top: 10px;">
+               <div class="col-md-6" style="text-align: left;
+               font: Regular 20px/27px Segoe UI;color:#707070     ">Our Users</div>
+               <div class="col-md-6" style="text-align:end"><img src="assets/more_0.png"></div>
+            </div>
+          
+            <div class="row">
+              <div class="col-md-2" >
+                <img src="assets/Drew James.png" style="width:60px;height:60px;border-radius:50pt">
+              </div>
+              <div class="col-md-10">
+                <div class="row" style="text-align: start;
+                padding-left: 26px;font: Bold 18px/13px Source Sans Pro;
+                letter-spacing: 0px;
+                color: #4D4F5C;padding-top: 10%;">
+                  Drew James
+                </div>
+                <div class="row" style="font: Regular 15px/25px Source Sans Pro;
+                letter-spacing: 0px;
+                color: #43425D;
+                opacity: 0.5;font-size: smaller;padding-top: 5%;">
+                  Unites states   Mobile : 871.567.4877
+                </div>
+              </div>
+                  </div>
+
+                  <div class="row" style="padding-top: 4%;">
+                    <div class="col-md-2" >
+                      <img src="assets/Bavid kames.png" style="width:60px;height:60px;border-radius:50pt">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="row" style="text-align: start;
+                      padding-left: 26px;font: Bold 18px/13px Source Sans Pro;
+                      letter-spacing: 0px;
+                      color: #4D4F5C;padding-top: 10%;">
+                        Bavid Kames
+                      </div>
+                      <div class="row" style="font: Regular 15px/25px Source Sans Pro;
+                      letter-spacing: 0px;
+                      color: #43425D;
+                      opacity: 0.5;font-size: smaller;padding-top: 5%;">
+                        Unites states   Mobile : 871.567.4877
+                      </div>
+                    </div>
+                        </div>
+                        <div class="row" style="padding-top: 4%;">
+                          <div class="col-md-2" >
+                            <img src="assets/Lavid Emes.png" style="width:60px;height:60px;border-radius:50pt">
+                          </div>
+                          <div class="col-md-10">
+                            <div class="row" style="text-align: start;
+                            padding-left: 26px;font: Bold 18px/13px Source Sans Pro;
+                            letter-spacing: 0px;
+                            color: #4D4F5C;padding-top: 10%;">
+                              Lavid Emes
+                            </div>
+                            <div class="row" style="font: Regular 15px/25px Source Sans Pro;
+                            letter-spacing: 0px;
+                            color: #43425D;
+                            opacity: 0.5;font-size: smaller;padding-top: 5%;">
+                              Unites states   Mobile : 871.567.4877
+                            </div>
+                          </div>
+                              </div>
+                  </div>
+        </div>
+        <div class="card" style="    margin-top: 5%;
+        background: white;">
+          <div class="card-body">
+          <div class="card-title">
+            <div class="row" style="text-align: left;
+            font: Regular 20px/27px Segoe UI;
+            letter-spacing: 0px;
+            color: #707070;">
+              Products Videos
+              <img src="assets/more_0.png" style="float:right;padding-top: 2%;">
+            </div>
+            <div class="row">
+
+
+              <div class="embed-responsive embed-responsive-4by3">
+               
+            <a href="https://youtu.be/Oy6hk6Y7VHQ"><img src="assets/Video tumbnail.png"></a>
+            </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+     </div>
+  </div>
+</div>
+</body>
+</html>
+
