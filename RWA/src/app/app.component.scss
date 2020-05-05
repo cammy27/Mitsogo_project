@@ -34,3 +34,92 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  .responsive_body{
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+  }
+  .sidebar{
+    padding: 0 !important;
+    background: #43425D;
+  }
+  .side_header{
+    text-align: left;
+    font: Bold 15px/21px Source Sans Pro;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+    opacity: 1;padding-left: 10px;
+  }
+  .home{
+    font: Regular 15px/19px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+  .dashboard{
+    font: Regular 15px/19px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+ .main-body{
+  padding: 0px !important;
+  background: #F0F0F7;
+  /* height: 100vh; */
+  border-top-left-radius: 13pt;
+ }
+ .nav-header{
+  background: white;
+  border-top-left-radius: 13pt;
+ }
+ .nav-right{
+  width:30%;text-align: right;  
+    padding-top: 5px;
+ }
+ .profile_pic{
+  width: 38px;
+  height: 38px;
+  border-radius: 50pt;
+ }
+ .stats{
+  background: white;
+  margin-bottom: 10%;
+  height: 457px;
+ }
+ .stats_text{
+  text-align: start;
+  color: #4D4F5C; 
+  font-size:18px;
+ }
+ .sales{
+  background: white;
+  margin-bottom: 10%;
+ }
+ .sales_text{
+  color: #4D4F5C;
+  font-size: 18px;
+ }
+ .referer{
+  text-align: left;
+  font: Regular 18px/13px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #4D4F5C;
+  opacity: 1;
+ }
+ .refer_table{
+  background: #F5F6FA;
+  border-bottom: 1px solid #F1F1F3;
+ }
+ td{
+  padding-top: 20px;
+  padding-bottom: 20px;
+ }
+ .show{
+  text-align: start;
+  padding-left: 4%;
+ }
+ .main_photo{
+  width: 109px;
+  height: 109px;
+  border-radius: 50px;
+ }

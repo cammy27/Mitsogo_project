@@ -11,104 +11,85 @@
 </head>
 <body>
 
-<!-- <div class="container">
-  <h1>My First Bootstrap Page</h1>
-  <p>This is some text.</p>
-</div> -->
-
-<div class="container" style="    padding: 0 !important;
-margin: 0 !important;
-width: 100%;">
+<div class="container responsive_body">
   <div class="row" style="background: #43425D;">
     <!-- the left side column -->
-    <div class="col-sm-2" style="padding: 0 !important;
-    background: #43425D;
-    /* height: 100vh; */
-    ">
-    <h1 style="text-align: left;
-    font: Bold 15px/21px Source Sans Pro;
-    letter-spacing: 3px;
-    color: #FFFFFF;
-    opacity: 1;padding-left: 10px;
-">IMPEKABLE</h1>
-<ul style="padding: 12px;">
-  <li>
-    <a href="#" style="font: Regular 15px/19px Source Sans Pro;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;">
-      <span style="padding-right: 15px;">
-        <img src="assets/home_0.png" style="
-        padding-left: 2%;"> 
-      </span>
-      Home
-    </a>
-  </li>
-  <li style="    padding-top: 20%;">
-    <a href="#" style="font: Regular 15px/19px Source Sans Pro;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;">
-      <span style="padding-right: 15px;">
-        <img src="assets/chart_0.png" style="
-        padding-left: 2%;">
-      </span>
-      Dashboard
-    </a>
-  </li>
-  <li style="padding-top: 20%;">
-    <a href="#" style="font: Regular 15px/19px Source Sans Pro;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;">
-      <span style="padding-right: 15px;">
-        <img src="assets/mail_0.png" style="
-        padding-left: 2%;">
-      </span>
-      Inbox
-    </a>
-  </li>
-  <li style="padding-top: 20%;">
-    <a href="#" style="font: Regular 15px/19px Source Sans Pro;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;">
-      <span style="padding-right: 15px;">
-        <img src="assets/bar_0.png" style="
-        padding-left: 2%;">
-      </span>
-      Products
-    </a>
-  </li>
-</ul>
+    <div class="col-sm-2 sidebar">
+          <h1  class="side_header">IMPEKABLE</h1>
+          <ul style="padding: 12px;">
+            <li>
+              <a href="#" class="home">
+                <span style="padding-right: 15px;">
+                  <img src="assets/home_0.png" style="padding-left: 2%;"> 
+                </span>
+                Home
+              </a>
+            </li>
+            <li style="padding-top: 20%;">
+              <a href="#" class="dashboard">
+                <span style="padding-right: 15px;">
+                  <img src="assets/chart_0.png" style="padding-left: 2%;">
+                </span>
+                Dashboard
+              </a>
+            </li>
+            <li style="padding-top: 20%;">
+              <a href="#" class="dashboard">
+                <span style="padding-right: 15px;">
+                  <img src="assets/mail_0.png" style="
+                  padding-left: 2%;">
+                </span>
+                Inbox
+              </a>
+            </li>
+            <li style="padding-top: 20%;">
+              <a href="#" class="dashboard">
+                <span style="padding-right: 15px;">
+                  <img src="assets/bar_0.png" style="
+                  padding-left: 2%;">
+                </span>
+                Products
+              </a>
+            </li>
+          </ul>
     </div>
-    <!-- left side of the column -->
-    <div class="col-sm-10" style="padding: 0px !important;
-    background: #F0F0F7;
-    /* height: 100vh; */
-    border-top-left-radius: 13pt;">
-    <!-- header -->
-<nav class="navbar navbar-expand-md navbar-dark " id="banner" style="    background: white;    border-top-left-radius: 13pt;">
-  <a class="navbar-brand" href="#" style="width: 10%;"><span> <img src="assets/menu_0.png"></span> </a>
-  <a class="navbar-brand" href="#" style="width:60%"><span><img src="assets/search_0.png" style="    padding-right: 2%;">
-    <input type="text"  placeholder="Search transactions, invoices or help" style="border: none;"></span></a>
-    <a class="navbar-brand" style="width:30%;text-align: right;    padding-top: 5px;">
-      <span style="padding-right: 5%;"> <img src="assets/notify_0.png"></span>
-      <span style="padding-right: 5%;">John Doe</span>
-      <span style="padding-right: 5%;"><img src="assets/Jana Navakova.jpg" style="    width: 38px;
-        height: 38px;
-        border-radius: 50pt;"></span>
-    </a>
-</nav>
-<div class="row">
 
+    <!-- left side of the column -->
+    <div class="col-sm-10 main-body">
+
+    <!-- header -->
+          <nav class="navbar navbar-expand-md navbar-dark nav-header " id="banner">
+            <a class="navbar-brand" href="#" style="width: 10%;">
+              <span> 
+                <img src="assets/menu_0.png">
+              </span> 
+            </a>
+            <a class="navbar-brand" href="#" style="width:60%">
+              <span>
+                <img src="assets/search_0.png" style="padding-right: 2%;">
+                <input type="text"  placeholder="Search transactions, invoices or help" style="border: none;">
+              </span>
+            </a>
+              <a class="navbar-brand nav-right">
+                <span style="padding-right: 5%;"> 
+                  <img src="assets/notify_0.png">
+                </span>
+                <span style="padding-right: 5%;">
+                  John Doe
+                </span>
+                <span style="padding-right: 5%;">
+                 <img src="assets/Jana Navakova.jpg" class="profile_pic">
+                </span>
+              </a>
+          </nav>
+          <!-- the -->
+<div class="row">
   <div class="col-md-8">
     <div class="row">
       <div class="col-md-6 grid-margin stretch-card">
-        <div class="card" style="background: white;
-        margin-bottom: 10%;height: 457px;">
+        <div class="card stats">
          <div class="row">
-           <div class="col-md-6" style="text-align: start;color: #4D4F5C; font-size:18px">
+           <div class="col-md-6 stats_text">
              Statistics
            </div>
            <div class="col-md-6 ">
@@ -126,9 +107,8 @@ width: 100%;">
         </div>
       </div>
       <div class="col-md-6 grid-margin stretch-card">
-        <div class="card" style="background: white;
-        margin-bottom: 10%;">
-          <div class="row" style="color: #4D4F5C;font-size: 18px;">
+        <div class="card sales" >
+          <div class="row sales_text" >
             Sales Distribution
           </div>
           <div class="row">
@@ -139,77 +119,47 @@ width: 100%;">
       <div class=" col-md-12 grid-margin">
         <div class="card" style="background: white;">
           <div class="card-body">
-            <div class="row" style="text-align: left;
-            font: Regular 18px/13px Source Sans Pro;
-            letter-spacing: 0px;
-            color: #4D4F5C;
-            opacity: 1;">
+            <div class="row referer">
               Referrer
             </div>
             <div class="table-responsive">
               <table class="table table-borderless">
-                <tr style="background: #F5F6FA;border-bottom: 1px solid #F1F1F3;">
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">Location</td>
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">Views</td>
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">Sales</td>
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">Conversion</td>
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">Total</td>
+                <tr class="refer_table" >
+                  <td >Location</td>
+                  <td >Views</td>
+                  <td >Sales</td>
+                  <td>Conversion</td>
+                  <td>Total</td>
                 </tr>
                 <tr style="border-bottom: 1px solid #F1F1F3;">
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">facebook.com</td>
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">3467</td>
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">753</td>
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">53%</td>
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">$12,1234</td>
+                  <td >facebook.com</td>
+                  <td >3467</td>
+                  <td >753</td>
+                  <td >53%</td>
+                  <td >$12,1234</td>
                 </tr>
                 <tr style="border-bottom: 1px solid #F1F1F3;">
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">twitter.com</td>
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">4634</td>
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">234</td>
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">34%</td>
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">$22,342</td>
+                  <td >twitter.com</td>
+                  <td >4634</td>
+                  <td >234</td>
+                  <td >34%</td>
+                  <td >$22,342</td>
                 </tr>
                 <tr style="border-bottom: 1px solid #F1F1F3; ">
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">Direct, email, IM</td>
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">5354</td>
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">435</td>
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">23%</td>
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">$13,3424</td>
+                  <td >Direct, email, IM</td>
+                  <td >5354</td>
+                  <td >435</td>
+                  <td >23%</td>
+                  <td >$13,3424</td>
                 </tr>
                 <tr style="border-bottom: 1px solid #F1F1F3;">
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">linkedin.com</td>
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">54634</td>
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">453</td>
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">65%</td>
-                  <td style=  " padding-top: 20px;
-                  padding-bottom: 20px;">$64,234</td>
+                  <td >linkedin.com</td>
+                  <td >54634</td>
+                  <td >453</td>
+                  <td >65%</td>
+                  <td >$64,234</td>
                 </tr>
-            <div class="row" style="    text-align: start;
-            padding-left: 4%;">
+            <div class="row show">
               <a href="#">Show More</a>
             </div>
               </table>
@@ -223,12 +173,10 @@ width: 100%;">
   <div class="col-md-4">
     <div class="row">
       <div class="col-md-12 grid-margin">
-        <div class="card" style="    background: #FFFFFF;">
+        <div class="card" style=" background: #FFFFFF;">
           <div class="card-body">
             <div class="card-title" >
-               <img src="assets/Jana Navakova.jpg" style="    width: 109px;
-               height: 109px;
-               border-radius: 50px;">
+               <img src="assets/Jana Navakova.jpg" class="main_photo">
                <div style="font: Bold 18px/13px Source Sans Pro;
                letter-spacing: 0px;
                color: #4D4F5C;
